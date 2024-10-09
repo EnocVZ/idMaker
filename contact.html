@@ -12,6 +12,40 @@
   <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("O-p5BTR9krEC9WU9f"); // Llave pública de EmailJS
+    })();
+  </script>
+  
+  <script type="text/javascript">
+    window.onload = function () {
+      // Captura el formulario y el div del mensaje
+      const form = document.getElementById('contact-form');
+      const formMessage = document.getElementById('form-message');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Previene que el formulario se envíe normalmente
+
+        // Enviar el formulario a través de EmailJS
+        emailjs.sendForm('service_vv03xr5', 'template_zq8wq3i', this)
+          .then((response) => {
+            if (response.status === 200) {
+              // Mostrar mensaje de éxito
+              formMessage.innerHTML = '<span style="color: green;">¡Correo enviado con éxito!</span>';
+
+              // Limpiar los campos del formulario después de enviar el correo
+              form.reset();
+            }
+          }, (error) => {
+            // Mostrar mensaje de error
+            formMessage.innerHTML = '<span style="color: red;">Error al enviar el correo. Inténtalo de nuevo.</span>';
+            console.log('Error al enviar el correo:', error);
+          });
+      });
+    }
+  </script>
 
 
 
@@ -246,13 +280,13 @@
                     </ul>
                   </div>
                   <div class="contact-wrap has_fade_anim" data-delay="0.30">
-                    <form action="#">
+                    <form id="contact-form">
                       <div class="contact-formwrap">
                         <div class="contact-formfield">
-                          <input type="text" name="Name" id="Name" placeholder="Nombre*">
+                          <input type="text" name="to_name" id="toName" placeholder="Nombre*">
                         </div>
                         <div class="contact-formfield">
-                          <input type="text" name="Email" id="Email" placeholder="Email*">
+                          <input type="email" name="user_email" id="Email" placeholder="Email*">
                         </div>
                         <div class="contact-formfield">
                           <input type="text" name="Phone" id="Phone" placeholder="Teléfono">
@@ -261,13 +295,15 @@
                           <input type="text" name="Subject" id="Subject" placeholder="Asunto*">
                         </div>
                         <div class="contact-formfield messages">
-                          <input type="text" name="Messages" id="Messages" placeholder="Mensaje*">
+                          <input type="text" name="message" id="Messages" placeholder="Mensaje*">
                         </div>
                       </div>
                       <div class="submit-btn">
-                        <button type="submit" class="wc-btn wc-btn-primary btn-text-flip"><span
-                            data-text="Send Message">Send Message</span></button>
+                        <button type="submit" class="wc-btn wc-btn-primary btn-text-flip"><span data-text="Send Message">Send
+                            Message</span></button>
                       </div>
+
+                      <div id="form-message" style="margin-top: 20px; font-size: 16px;"></div>
                     </form>
                   </div>
                 </div>
