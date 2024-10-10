@@ -27,7 +27,7 @@
    
   <link rel="stylesheet" href="assets/css/master-startup-agency.css">
   <link rel="stylesheet" href="assets/css/master-modern-agency.css">
-
+  <link rel="stylesheet" href="assets/css/index.css"
 
 </head>
 
@@ -138,7 +138,7 @@
       <div class="header-area__inner">
         <div class="header__logo">
           <a href="#">
-            <img class="show-light" src="assets/imgs/logo/logo.png" alt="Site Logo">
+            <img class="show-light" style="width: 265px;" src="assets/imgs/logo/logo.png" alt="Site Logo">
             <img class="show-dark" src="assets/imgs/logo/logo-light.png" alt="Site Logo">
           </a>
         </div>
@@ -156,7 +156,7 @@
           </nav>
         </div>
         <div class="header__button">
-          <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"><span data-text="Get started" style="text-transform: none;">Comienza tu proyecto hoy</span></a>
+          <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"><span data-text="Empezar" style="text-transform: none;">Comienza tu proyecto hoy</span></a>
         </div>
         <div class="header__navicon d-xl-none">
           <button onclick="showCanvas3()" class="open-offcanvas">
@@ -217,9 +217,9 @@
                       </div>
                       <div class="btn-wrapper has_fade_anim" data-delay="1.2">
                         <a class="wc-btn wc-btn-primary btn-text-flip"> <span
-                            data-text="Learn more">conocenos</span></a>
+                            data-text="conócenos">conócenos</span></a>
                         <a href="https://www.facebook.com/reel/498726672965738"
-                          class="wc-btn wc-btn-normal ">mira <br>
+                          class="wc-btn wc-btn-normal ">Mira <br>
                           nuestro trabajo <i class="fa-solid fa-play"></i></a>
                       </div>
                     </div>
@@ -253,7 +253,8 @@
               <div class="container large">
                 <div class="features-area-inner">
                   <div class="shape-1">
-                    <img src="assets/imgs/shape/img-s-21.webp" alt="shape image">
+                    <!-- cambiar imagen -->
+                    <img src="assets/imgs/shape/img-s-21.webp" alt="shape image" class="colored-image">
                   </div>
                   <div class="shape-2">
                     <img src="assets/imgs/shape/img-s-22.webp" alt="shape image">
@@ -306,7 +307,7 @@
                         <img src="assets/imgs/icon/icon-s-24.webp" alt="feature icon">
                       </div>
                       <div class="content">
-                        <h3 class="title">Enfoque <br>
+                        <h3 class="title" style="text-transform: capitalize;">Enfoque <br>
                           Humano</h3>
                         <p class="text">Nuestra ventaja no radica solo en nuestra capacidad técnica, sino en nuestro enfoque humano.
                         </p>
@@ -317,7 +318,7 @@
                         <img src="assets/imgs/icon/icon-s-25.webp" alt="feature icon">
                       </div>
                       <div class="content">
-                        <h3 class="title">Trabajamos <br>
+                        <h3 class="title" style="text-transform: capitalize;">Trabajamos <br>
                           contigo </h3>
                         <p class="text">Comprendiendo tus aspiraciones y plasmándolas en soluciones que no solo funcionan, sino que crean experiencias.
                       </div>
@@ -326,8 +327,8 @@
                       <div class="thumb">
                         <img src="assets/imgs/icon/icon-s-26.webp" alt="feature icon">
                       </div>
-                      <div class="content">
-                        <h3 class="title">propósito <br>
+                      <div class="content" >
+                        <h3 class="title" style="text-transform: capitalize;">propósito <br>
                           Sostenible</h3>
                         <p class="text">Cada código que escribimos tiene un propósito: impulsar tu crecimiento de manera sostenible.
                         </p>
@@ -348,7 +349,7 @@
                   <div class="section-title-wrapper">
                     <div class="title-wrapper">
                       <h2 class="section-title has_fade_anim" data-delay="0.15">Soluciones personalizadas <br>
-                        que EMPODERAN  </h2>
+                        que <span style="color: #39af80;">EMPODERAN</span>  </h2>
                     </div>
                   </div>
                   <div class="text-wrapper">
@@ -359,6 +360,22 @@
                 <div class="services-wrapper-box">
                   <div class="services-wrapper">
                     <div class="has_fade_anim" data-fade-from="left">
+                      <div class="icon-tx">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000000" class="bi bi-code-slash"
+                            viewBox="0 0 16 16">
+                            <path
+                              d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+                          </svg>
+                        </div>
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000000" class="bi bi-braces-asterisk"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                              d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6M7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5z" />
+                          </svg>
+                        </div>
+                      </div>
                       <a href="service-details.html">
                         <div class="service-box">
                           <p class="title">Desarrollo de Aplicaciones Móviles</p>
@@ -375,6 +392,24 @@
                       </a>
                     </div>
                     <div class="has_fade_anim" data-fade-from="right" data-delay="0.30">
+                      <div class="icon-tx">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000000" class="bi bi-file-earmark-code"
+                            viewBox="0 0 16 16">
+                            <path
+                              d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                            <path
+                              d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708" />
+                          </svg>
+                        </div>
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000000" class="bi bi-braces-asterisk"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                              d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6M7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5z" />
+                          </svg>
+                        </div>
+                      </div>
                       <a href="service-details.html">
                         <div class="service-box">
                           <p class="title">Desarrollo de Software a la Medida</p>
@@ -596,7 +631,7 @@
                       <span class="section-subtitle has-left-line has_fade_anim">"Como Trabajamos":</span>
                     </div>
                     <div class="title-wrapper">
-                      <h2 class="section-title has_text_move_anim"> "Innovación Tecnológica, Resultados Ágiles"</h2>
+                      <h2 class="section-title has_text_move_anim"> "<span style="color: #39af80;">Innovación</span> Tecnológica, Resultados Ágiles"</h2>
                     </div>
                   </div>
                   <div class="text-wrapper">
@@ -674,7 +709,7 @@
                   </div>
                   <div class="btn-wrapper has_fade_anim">
                     <a href="contact.html" class="wc-btn wc-btn-primary btn-text-flip"> <span
-                        data-text="Let’s get connected ">Cuéntanos tus ideas, nosotros las haremos realidad </span></a>
+                        data-text="Vamos a conectarnos ">Cuéntanos tus ideas, nosotros las haremos realidad </span></a>
                   </div>
                 </div>
                 <div class="thumb-wrapper">
